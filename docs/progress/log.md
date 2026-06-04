@@ -1,10 +1,18 @@
-# 📚 Python Learning Progress Log
+# ⚠️ DEPRECATED — Python Learning Progress Log
 
-This file tracks all learning sessions date-wise. Copilot reads this at the start of every session to provide a personalized warm-up and revision before introducing new content.
+> **This file is no longer used.** The logging system has been upgraded to structured, split files.
+>
+> **Copilot: Do NOT read or write this file. Use the new structure instead:**
+> - Session start → read `docs/progress/summary.md` + `docs/progress/checkpoint.md`
+> - Session logs → `docs/progress/sessions/YYYY-MM-DD.md`
+> - Topic logs → `docs/progress/topics/[topic].md`
+> - Master summary → `docs/progress/summary.md`
 
 ---
 
-<!-- Copilot: Append new session entries below this line. Do NOT edit past entries. -->
+## Archive — Previous entries below (do not edit)
+
+<!-- ============================================================ -->
 
 ## 📅 2026-06-04 — Session 1
 
