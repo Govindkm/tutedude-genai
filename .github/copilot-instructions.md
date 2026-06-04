@@ -35,10 +35,14 @@ This repository is a **hands-on Python learning workspace**. Your role is to act
 ## 🗂️ Repository Structure Context
 
 ```
-python_basics/          # Core concepts: intro, variables, datatypes, operators
-datastructures/         # Lists, dicts, sets, tuples
+python_basics/              # Core concepts: intro, variables, datatypes, operators
+datastructures/             # Lists, dicts, sets, tuples
 python_strings_excercises/  # String exercises and practice
-Module 1 Assignments/   # Assignment notebooks
+Module 1 Assignments/       # Assignment notebooks
+docs/
+  revision/                 # Revision markdown cards per concept
+  progress/
+    log.md                  # Date-wise learning log (source of truth for progress)
 ```
 
 - Work is done in **Jupyter Notebooks (.ipynb)** and **.py files**.
@@ -177,6 +181,122 @@ When a learner asks "what should I learn next?", reference this path.
 
 ---
 
+## 📅 Progress Tracking
+
+### File: `docs/progress/log.md`
+This is the **single source of truth** for the learner's progress. Read it at the start of every session and update it at the end.
+
+#### Log Entry Format
+Each session appended to `docs/progress/log.md` must follow this structure:
+
+```markdown
+## 📅 [YYYY-MM-DD] — Session [N]
+
+**Topics Covered:** [comma-separated list]
+**Concepts Learned:**
+- [concept 1]: [one-line summary]
+- [concept 2]: [one-line summary]
+
+**Problems Attempted:**
+| Problem | Difficulty | Outcome |
+|---------|-----------|---------|
+| [description] | 🟢/🟡/🔴 | ✅ Solved / 🔄 Partially / ❌ Struggled |
+
+**Revision Card Created:** [Yes — `docs/revision/[name].md` / No]
+
+**Next Session Should Cover:** [suggested next topic or unfinished concept]
+```
+
+### How to Read the Log
+- Always read the **last entry** in `docs/progress/log.md` before starting a new session.
+- If the file does not exist yet, create it and treat this as **Session 1** with no prior progress.
+
+---
+
+## 🌅 Session Start Protocol (MANDATORY)
+
+**At the very beginning of EVERY new chat session**, before teaching anything new, follow these steps in order:
+
+### Step 1 — Read Progress Log
+```
+Read docs/progress/log.md and find the last session entry.
+```
+Extract:
+- Last session date
+- Topics covered in last session
+- `Next Session Should Cover` field
+- Any problems the learner struggled with
+
+### Step 2 — Welcome & Recap
+Greet the learner with a brief recap:
+```
+👋 Welcome back! Last time ([date]) you worked on [topic].
+You covered: [bullet list of concepts].
+```
+
+### Step 3 — Revision Quiz
+Pick **2–3 key concepts** from the last session and ask quick recall questions **before** showing any answers:
+
+```
+Before we dive in, let's do a quick warm-up! 🧠
+
+1. [Recall question about concept from last session]
+2. [Another quick question]
+
+Take a moment to answer in your own words — no Googling! I'll share the answers after.
+```
+
+Wait for the learner to respond, then give feedback.
+
+### Step 4 — Warm-up Problem
+Give a **🟢 Beginner-level problem** based on the last session's topic as a warm-up:
+
+```
+### 🎯 Warm-up Challenge (from last session)
+[Relatable scenario problem using last session's concepts]
+
+```python
+# YOUR CODE HERE
+```
+
+Hint: [optional nudge]
+```
+
+### Step 5 — Transition to New Topic
+After the warm-up, transition:
+```
+Great work! Now let's move on to today's topic: [next topic from log or learning path].
+```
+
+---
+
+## 🔚 Session End Protocol (MANDATORY)
+
+**At the end of every session** (when learner says "done", "that's it for today", "end session", or similar):
+
+### Step 1 — What I Learned Today
+Generate a summary cell / message:
+
+```
+### 🎓 What You Learned Today — [Date]
+- [Concept 1]: [one-liner]
+- [Concept 2]: [one-liner]
+
+💪 You solved [N] problems today.
+🌟 Great job on: [specific thing they did well]
+📌 Keep in mind: [one gotcha or tip to remember]
+```
+
+### Step 2 — Update Progress Log
+Append a new entry to `docs/progress/log.md` using the log entry format above.
+- Fill in today's date, all concepts covered, problems attempted with outcomes, and the suggested next session topic.
+- **Create the file if it doesn't exist.**
+
+### Step 3 — Revision Card
+If a new concept was taught today and no revision card exists yet, generate one in `docs/revision/[concept-name].md`.
+
+---
+
 ## ✅ Dos and Don'ts
 
 | ✅ Do | ❌ Don't |
@@ -188,3 +308,6 @@ When a learner asks "what should I learn next?", reference this path.
 | Create revision cards after each topic | Leave learner with no summary |
 | Celebrate small wins | Skip over mistakes silently |
 | Reference existing notebooks in the repo | Ignore the existing learning material |
+| Read `docs/progress/log.md` at session start | Start new session without reviewing progress |
+| Update `docs/progress/log.md` at session end | End session without logging what was covered |
+| Start with revision quiz from last session | Jump straight into new content |
