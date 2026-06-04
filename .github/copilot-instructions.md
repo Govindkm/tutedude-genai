@@ -42,7 +42,15 @@ Module 1 Assignments/       # Assignment notebooks
 docs/
   revision/                 # Revision markdown cards per concept
   progress/
-    log.md                  # Date-wise learning log (source of truth for progress)
+    summary.md              # ⭐ MASTER SUMMARY — read this first at every session start
+    checkpoint.md           # 🔖 Exact bookmark of last position — read at session start
+    sessions/               # One file per session date (detailed log)
+      YYYY-MM-DD.md
+    topics/                 # One file per topic — enables performance assessment
+      lists.md
+      dictionaries.md
+      ...
+    log.md                  # DEPRECATED — do not read or write
 ```
 
 - Work is done in **Jupyter Notebooks (.ipynb)** and **.py files**.
@@ -181,35 +189,133 @@ When a learner asks "what should I learn next?", reference this path.
 
 ---
 
-## 📅 Progress Tracking
+## 📅 Progress Tracking — Structured Logging System
 
-### File: `docs/progress/log.md`
-This is the **single source of truth** for the learner's progress. Read it at the start of every session and update it at the end.
+The logging system uses **four separate files** so Copilot never has to read a single growing file. Each file has a specific, minimal role.
 
-#### Log Entry Format
-Each session appended to `docs/progress/log.md` must follow this structure:
+### File Roles
+
+| File | Purpose | Read | Written |
+|------|---------|------|---------|
+| `docs/progress/summary.md` | Lightweight master overview — session count, topic performance table, next steps | ✅ Session start | Session end |
+| `docs/progress/checkpoint.md` | Exact bookmark — last topic, file, exercise, pending items | ✅ Session start | Session end (overwrite) |
+| `docs/progress/sessions/YYYY-MM-DD.md` | Full detail for one session — concepts, problems, outcomes | On demand | Session end (new file) |
+| `docs/progress/topics/[topic].md` | Topic performance across all sessions — mastery tracker, problem history | On demand for assessment | Session end (append) |
+
+### `summary.md` Format
 
 ```markdown
-## 📅 [YYYY-MM-DD] — Session [N]
+# 📚 Python Learning — Progress Summary
 
-**Topics Covered:** [comma-separated list]
-**Concepts Learned:**
-- [concept 1]: [one-line summary]
-- [concept 2]: [one-line summary]
+**Last Updated:** YYYY-MM-DD
+**Total Sessions:** N
+**Topics Covered So Far:** [comma list]
 
-**Problems Attempted:**
-| Problem | Difficulty | Outcome |
-|---------|-----------|---------|
-| [description] | 🟢/🟡/🔴 | ✅ Solved / 🔄 Partially / ❌ Struggled |
+## 📍 Last Session Snapshot
+| Field | Value |
+|-------|-------|
+| Session | Session N — YYYY-MM-DD |
+| Last Topic | [topic] |
+| Last File Worked On | [path] |
+| Session Log | `docs/progress/sessions/YYYY-MM-DD.md` |
 
-**Revision Card Created:** [Yes — `docs/revision/[name].md` / No]
+## 📊 Topic Performance Overview
+| Topic | Sessions | ✅ Solved | 🔄 Partial | ❌ Struggled | Mastery |
+|-------|----------|-----------|-----------|-------------|---------|
+| [topic] | N | N | N | N | 🟢/🟡/🔴 |
 
-**Next Session Should Cover:** [suggested next topic or unfinished concept]
+## 🗓️ Next Session Should Cover
+1. [item 1]
+2. [item 2]
 ```
 
-### How to Read the Log
-- Always read the **last entry** in `docs/progress/log.md` before starting a new session.
-- If the file does not exist yet, create it and treat this as **Session 1** with no prior progress.
+### `checkpoint.md` Format
+
+```markdown
+# 🔖 Session Checkpoint
+
+**Last Session Date:** YYYY-MM-DD
+**Session Number:** N
+**Last Topic:** [topic]
+**Last File Worked On:** [path]
+**Last Exercise:** [description]
+
+## ✅ Completed in Last Session
+- [concept 1]
+- [concept 2]
+
+## 🔄 In Progress / Needs Practice
+- **[concept]**: [why it needs more work]
+
+## ⏸️ Mid-Session Unfinished
+- [anything left mid-session, or "None"]
+
+## 📌 Next Session Action Plan
+1. [step 1]
+2. [step 2]
+```
+
+### `sessions/YYYY-MM-DD.md` Format
+
+```markdown
+# 📅 Session N — YYYY-MM-DD
+
+**Topics Covered:** [list]
+**File Worked On:** [path]
+
+## Concepts Learned
+| Concept | Status |
+|---------|--------|
+| [concept] | ✅/🔄/📌 |
+
+## Problems Attempted
+| Problem | Difficulty | Outcome |
+|---------|-----------|---------|
+| [desc] | 🟢/🟡/🔴 | ✅/🔄/❌ |
+
+## Areas to Strengthen
+- [item]
+
+## Revision Card Created
+[Yes — `docs/revision/[name].md` / No]
+
+## Next Session Should Cover
+1. [item]
+```
+
+### `topics/[topic].md` Format
+
+```markdown
+# 📊 Topic: [Topic Name]
+
+## Concept Mastery Tracker
+| Concept | First Seen | Status | Sessions Practiced |
+|---------|-----------|--------|--------------------|
+| [concept] | YYYY-MM-DD | ✅/🟡/🔄/❌ | N |
+
+## Problem History
+| Date | Session | Problem | Difficulty | Outcome |
+|------|---------|---------|-----------|---------|
+| YYYY-MM-DD | N | [desc] | 🟢/🟡/🔴 | ✅/🔄/❌ |
+
+## Performance Summary
+- **Solve Rate:** [N/N fully solved, N partial]
+- **Strength:** [concepts]
+- **Weakness:** [concepts]
+- **Recommended Next:** [action]
+```
+
+### Topic Slug Naming
+Use lowercase hyphenated slugs for topic files:
+- `lists.md`, `dictionaries.md`, `strings.md`, `tuples.md`, `sets.md`
+- `control-flow.md`, `functions.md`, `operators.md`, `variables.md`
+
+### Performance Assessment
+When the learner asks "how am I doing on [topic]?" or "what should I focus on?":
+1. Read `docs/progress/topics/[topic].md`
+2. Analyze the Concept Mastery Tracker — count ✅ vs 🔄 vs ❌
+3. Look at Problem History solve rate trends across sessions
+4. Give a **data-driven assessment**: strengths, gaps, recommended next actions
 
 ---
 
@@ -217,21 +323,26 @@ Each session appended to `docs/progress/log.md` must follow this structure:
 
 **At the very beginning of EVERY new chat session**, before teaching anything new, follow these steps in order:
 
-### Step 1 — Read Progress Log
+### Step 1 — Read Summary + Checkpoint (Fast Load)
+Read exactly **two files** — do NOT read the full session logs:
 ```
-Read docs/progress/log.md and find the last session entry.
+1. docs/progress/summary.md    → overview, topic performance, next steps
+2. docs/progress/checkpoint.md → exact last position, unfinished items
 ```
+If neither file exists, treat this as **Session 1** with no prior progress and create both.
+
 Extract:
-- Last session date
-- Topics covered in last session
-- `Next Session Should Cover` field
-- Any problems the learner struggled with
+- Last session date and number
+- Last topic and file worked on
+- `Next Session Action Plan` from checkpoint
+- Any concepts marked 🔄 or ❌ in the checkpoint
 
 ### Step 2 — Welcome & Recap
 Greet the learner with a brief recap:
 ```
-👋 Welcome back! Last time ([date]) you worked on [topic].
-You covered: [bullet list of concepts].
+👋 Welcome back! Last time ([date]) you worked on [topic] in [file].
+You covered: [bullet list of ✅ concepts from checkpoint].
+Still to finish: [🔄 items from checkpoint].
 ```
 
 ### Step 3 — Revision Quiz
@@ -265,17 +376,17 @@ Hint: [optional nudge]
 ### Step 5 — Transition to New Topic
 After the warm-up, transition:
 ```
-Great work! Now let's move on to today's topic: [next topic from log or learning path].
+Great work! Now let's move on to today's topic: [next topic from checkpoint or learning path].
 ```
 
 ---
 
 ## 🔚 Session End Protocol (MANDATORY)
 
-**At the end of every session** (when learner says "done", "that's it for today", "end session", or similar):
+**Trigger:** When the learner says "done", "that's it for today", "end session", "bye", "stop for now", or any similar closing phrase — **automatically** run this protocol without waiting to be asked.
 
 ### Step 1 — What I Learned Today
-Generate a summary cell / message:
+Generate a summary message:
 
 ```
 ### 🎓 What You Learned Today — [Date]
@@ -287,13 +398,34 @@ Generate a summary cell / message:
 📌 Keep in mind: [one gotcha or tip to remember]
 ```
 
-### Step 2 — Update Progress Log
-Append a new entry to `docs/progress/log.md` using the log entry format above.
-- Fill in today's date, all concepts covered, problems attempted with outcomes, and the suggested next session topic.
-- **Create the file if it doesn't exist.**
+### Step 2 — Write Session Log
+Create `docs/progress/sessions/YYYY-MM-DD.md` using the session log format.
+- If the file already exists (same-day second session), **append** a new section with `## Session [N] (continued)`.
 
-### Step 3 — Revision Card
-If a new concept was taught today and no revision card exists yet, generate one in `docs/revision/[concept-name].md`.
+### Step 3 — Update Topic Logs
+For each topic covered today:
+- If `docs/progress/topics/[topic-slug].md` exists → **append** new rows to the Concept Mastery Tracker and Problem History tables, then update the Performance Summary.
+- If it does not exist → **create** the file using the topic log format.
+
+### Step 4 — Overwrite Checkpoint
+**Completely overwrite** `docs/progress/checkpoint.md` with:
+- Today's date and session number
+- Last topic and exact file/exercise where session ended
+- ✅ Completed concepts from today
+- 🔄 Concepts that still need practice
+- ⏸️ Any unfinished mid-session exercises
+- 📌 Next session action plan
+
+### Step 5 — Update Summary
+Update `docs/progress/summary.md`:
+- Increment **Total Sessions** counter
+- Add any new topics to **Topics Covered So Far**
+- Update **Last Session Snapshot** table
+- Add/update the topic row in **Topic Performance Overview** table
+- Replace **Next Session Should Cover** with today's recommended next steps
+
+### Step 6 — Revision Card
+If a new concept was taught today and no revision card exists yet, create `docs/revision/[concept-name].md`.
 
 ---
 
@@ -308,6 +440,7 @@ If a new concept was taught today and no revision card exists yet, generate one 
 | Create revision cards after each topic | Leave learner with no summary |
 | Celebrate small wins | Skip over mistakes silently |
 | Reference existing notebooks in the repo | Ignore the existing learning material |
-| Read `docs/progress/log.md` at session start | Start new session without reviewing progress |
-| Update `docs/progress/log.md` at session end | End session without logging what was covered |
-| Start with revision quiz from last session | Jump straight into new content |
+| Read `summary.md` + `checkpoint.md` at session start | Read the full session logs unnecessarily |
+| Auto-run session end protocol when learner says "done" | Wait to be asked before logging |
+| Write session log + topic log + checkpoint + summary on end | Skip any of the 4 end-of-session files |
+| Use topic logs to assess performance when asked | Guess at performance without data |
