@@ -9,25 +9,24 @@
 
 **Last Updated:** 2026-06-04
 **Total Sessions:** 1
-**Topics Covered So Far:** Python Lists
+**Topics Covered So Far:** Python Lists ✅, Dictionaries (intro — notebook created, exercises pending)
 
 ## 📍 Last Session Snapshot
 
 | Field | Value |
 |-------|-------|
 | Session | Session 1 — 2026-06-04 |
-| Last Topic | Python Lists |
-| Last File Worked On | `datastructures/List.ipynb` |
+| Last Topic | Python Lists (complete) + Dictionary notebook created |
+| Last File Worked On | `datastructures/Dictionary.ipynb` |
 | Session Log | `docs/progress/sessions/2026-06-04.md` |
 
 ## 📊 Topic Performance Overview
 
 | Topic | Sessions | ✅ Solved | 🔄 Partial | ❌ Struggled | Mastery |
 |-------|----------|-----------|-----------|-------------|---------|
-| Python Lists | 1 | 2 | 1 | 0 | 🟡 In Progress |
+| Python Lists | 1 | 3 | 0 | 0 | ✅ Mastered |
+| Dictionaries | 0 | 0 | 0 | 0 | 🔜 Up Next |
 
 ## 🗓️ Next Session Should Cover
 
-1. `enumerate()` — teach with examples
-2. List comprehension practice — dedicated exercises
-3. Move to **Dictionaries** after above gaps are filled
+1. **Dictionaries** — work through `datastructures/Dictionary.ipynb` (all 6 tasks)
