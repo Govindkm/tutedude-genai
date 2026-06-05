@@ -15,9 +15,9 @@
 | `len()`, `sum()`, `min()`, `max()` | 2026-06-04 | ✅ Mastered | 1 |
 | `sorted()` vs `.sort()` | 2026-06-04 | ✅ Mastered | 1 |
 | `list.index(val, start)` | 2026-06-04 | ✅ Mastered | 1 |
-| `zip()` | 2026-06-04 | 🟡 Introduced | 1 |
-| List comprehension | 2026-06-04 | 🔄 Needs Practice | 1 |
-| `enumerate()` | — | ❌ Not Yet Taught | 0 |
+| `zip()` | 2026-06-04 | ✅ Mastered | 1 |
+| List comprehension | 2026-06-04 | ✅ Mastered | 1 |
+| `enumerate()` | 2026-06-04 | ✅ Mastered | 1 |
 
 ## Problem History
 
@@ -25,11 +25,11 @@
 |------|---------|---------|-----------|---------|
 | 2026-06-04 | 1 | Movie watchlist — add, replace, len, index | 🟢 | ✅ Solved |
 | 2026-06-04 | 1 | Movie watchlist — numbered report | 🟡 | ✅ Solved |
-| 2026-06-04 | 1 | Student grade manager (6-part) | 🔴 | 🔄 Partial |
+| 2026-06-04 | 1 | Student grade manager (6-part) | 🔴 | ✅ Solved |
 
 ## Performance Summary
 
-- **Solve Rate:** 2/3 fully solved, 1 partial (67% full solve, 100% attempted)
-- **Strength:** Basic operations, methods, built-in functions
-- **Weakness:** `enumerate()` (not taught), list comprehension (needs practice)
-- **Recommended Next:** Teach `enumerate()`, then list comprehension drills
+- **Solve Rate:** 3/3 fully solved (100% full solve)
+- **Strength:** Basic operations, methods, built-in functions, `zip()`, `enumerate()`, list comprehension
+- **Weakness:** None significant in Lists right now
+- **Recommended Next:** Mixed practice combining list and dictionary comprehensions

@@ -7,26 +7,27 @@
 
 ---
 
-**Last Updated:** 2026-06-04
-**Total Sessions:** 1
-**Topics Covered So Far:** Python Lists ✅, Dictionaries (intro — notebook created, exercises pending)
+**Last Updated:** 2026-06-05
+**Total Sessions:** 2
+**Topics Covered So Far:** Python Lists ✅, Dictionaries ✅
 
 ## 📍 Last Session Snapshot
 
 | Field | Value |
 |-------|-------|
-| Session | Session 1 — 2026-06-04 |
-| Last Topic | Python Lists (complete) + Dictionary notebook created |
-| Last File Worked On | `datastructures/Dictionary.ipynb` |
-| Session Log | `docs/progress/sessions/2026-06-04.md` |
+| Session | Session 2 — 2026-06-05 |
+| Last Topic | Dictionaries (challenge tasks completed) |
+| Last File Worked On | `datastructures/comprehensions_mixed_practice.ipynb` |
+| Session Log | `docs/progress/sessions/2026-06-05.md` |
 
 ## 📊 Topic Performance Overview
 
 | Topic | Sessions | ✅ Solved | 🔄 Partial | ❌ Struggled | Mastery |
 |-------|----------|-----------|-----------|-------------|---------|
 | Python Lists | 1 | 3 | 0 | 0 | ✅ Mastered |
-| Dictionaries | 0 | 0 | 0 | 0 | 🔜 Up Next |
+| Dictionaries | 1 | 6 | 0 | 0 | ✅ Mastered |
 
 ## 🗓️ Next Session Should Cover
 
-1. **Dictionaries** — work through `datastructures/Dictionary.ipynb` (all 6 tasks)
+1. **Mixed Comprehensions Practice** — work through `datastructures/comprehensions_mixed_practice.ipynb`
+2. Build speed with list + dictionary comprehension patterns (`filter`, `transform`, nested data)
