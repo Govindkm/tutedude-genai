@@ -22,6 +22,7 @@
 
 - Solving join-style comprehensions quickly without loops
 - Multi-table aggregation logic (3-table joins with filtering/grouping)
+- Needs extra practice on multi-table comprehension patterns overall
 
 ## ⏸️ Mid-Session Unfinished
 
@@ -32,3 +33,4 @@
 1. Solve Problems 1-10 (2-table joins)
 2. Solve Problems 11-20 (3-table joins)
 3. Solve Problems 21-30 and review patterns that felt hardest
+4. Do a short recap set focused on comprehension joins and aggregations
