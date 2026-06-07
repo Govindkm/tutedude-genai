@@ -7,18 +7,18 @@
 
 ---
 
-**Last Updated:** 2026-06-05
-**Total Sessions:** 2
-**Topics Covered So Far:** Python Lists ✅, Dictionaries ✅, Comprehensions (Mixed + Joins) 🚀
+**Last Updated:** 2026-06-07
+**Total Sessions:** 3
+**Topics Covered So Far:** Python Lists ✅, Dictionaries ✅, Comprehensions (Mixed + Joins) 🚀, Control Flow ✅, Loops ✅
 
 ## 📍 Last Session Snapshot
 
 | Field | Value |
 |-------|-------|
-| Session | Session 2 (continued) — 2026-06-05 |
-| Last Topic | Comprehensions (mixed complete, joins workbook created) |
-| Last File Worked On | `datastructures/comprehensions_joins_30_problems.ipynb` |
-| Session Log | `docs/progress/sessions/2026-06-05.md` |
+| Session | Session 3 — 2026-06-07 |
+| Last Topic | Loops (nested loops + continue/break) |
+| Last File Worked On | `python_basics/loops.ipynb` |
+| Session Log | `docs/progress/sessions/2026-06-07.md` |
 
 ## 📊 Topic Performance Overview
 
@@ -26,10 +26,12 @@
 |-------|----------|-----------|-----------|-------------|---------|
 | Python Lists | 1 | 3 | 0 | 0 | ✅ Mastered |
 | Dictionaries | 1 | 6 | 0 | 0 | ✅ Mastered |
-| Comprehensions (Mixed + Joins) | 1 | 1 | 0 | 0 | 🟡 In Progress |
+| Comprehensions (Mixed + Joins) | 2 | 2 | 1 | 0 | 🟡 In Progress |
+| Control Flow | 1 | 1 | 0 | 0 | ✅ Strong |
+| Loops | 1 | 3 | 0 | 0 | ✅ Strong |
 
 ## 🗓️ Next Session Should Cover
 
-1. Solve Problems 1-10 in `datastructures/comprehensions_joins_30_problems.ipynb`
-2. Move to Problems 11-20 (3-table joins)
-3. Finish Problems 21-30 (aggregations and revenue-style joins)
+1. Complete Problems 21-30 in `datastructures/comprehensions_joins_30_problems.ipynb`
+2. Run a short recap set for multi-table join + aggregation comprehensions
+3. Start `python_basics/functions.ipynb`
