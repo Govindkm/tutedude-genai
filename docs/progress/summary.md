@@ -9,15 +9,15 @@
 
 **Last Updated:** 2026-06-07
 **Total Sessions:** 3
-**Topics Covered So Far:** Python Lists ✅, Dictionaries ✅, Comprehensions (Mixed + Joins) 🚀, Control Flow ✅, Loops ✅
+**Topics Covered So Far:** Python Lists ✅, Dictionaries ✅, Comprehensions (Mixed + Joins) 🚀, Control Flow ✅, Loops ✅, Functions 🚀
 
 ## 📍 Last Session Snapshot
 
 | Field | Value |
 |-------|-------|
 | Session | Session 3 — 2026-06-07 |
-| Last Topic | Loops (nested loops + continue/break) |
-| Last File Worked On | `python_basics/loops.ipynb` |
+| Last Topic | Functions (default params, returns, keyword args, `*args`) |
+| Last File Worked On | `python_basics/functions.ipynb` |
 | Session Log | `docs/progress/sessions/2026-06-07.md` |
 
 ## 📊 Topic Performance Overview
@@ -29,9 +29,10 @@
 | Comprehensions (Mixed + Joins) | 2 | 2 | 1 | 0 | 🟡 In Progress |
 | Control Flow | 1 | 1 | 0 | 0 | ✅ Strong |
 | Loops | 1 | 3 | 0 | 0 | ✅ Strong |
+| Functions | 1 | 2 | 1 | 0 | 🟡 In Progress |
 
 ## 🗓️ Next Session Should Cover
 
-1. Complete Problems 21-30 in `datastructures/comprehensions_joins_30_problems.ipynb`
-2. Run a short recap set for multi-table join + aggregation comprehensions
-3. Start `python_basics/functions.ipynb`
+1. Complete keyword args + `*args` challenge in `python_basics/functions.ipynb`
+2. Complete Problems 21-30 in `datastructures/comprehensions_joins_30_problems.ipynb`
+3. Run a short recap set for multi-table join + aggregation comprehensions
