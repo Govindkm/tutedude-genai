@@ -1,0 +1,5 @@
+Total Tasks: 6
+Done Tasks: 4
+Pending Tasks: 2
+Total Minutes Done: 185
+Study Minutes Done: 75

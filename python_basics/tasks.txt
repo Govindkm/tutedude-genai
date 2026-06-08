@@ -1,0 +1,3 @@
+Line 1: I am Govind and I am here to learn Python and ML
+Line 2: Life is very good with vscode
+Line 3: Python adds spice into it

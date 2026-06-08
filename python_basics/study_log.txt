@@ -1,0 +1,6 @@
+Read Python chapter|study|45|done
+Practice loops|study|30|done
+Watch ML video|learning|40|pending
+Solve 5 exercises|practice|50|done
+Revise notes|study|20|pending
+Mock interview|practice|60|done
