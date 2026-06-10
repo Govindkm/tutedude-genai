@@ -44,6 +44,7 @@ docs/
   progress/
     summary.md              # ⭐ MASTER SUMMARY — read this first at every session start
     checkpoint.md           # 🔖 Exact bookmark of last position — read at session start
+    roadmap.md              # 🗺️ Structured learning path — read at session start for next topic selection
     sessions/               # One file per session date (detailed log)
       YYYY-MM-DD.md
     topics/                 # One file per topic — enables performance assessment
@@ -186,6 +187,7 @@ Guide the learner through topics in this order, referencing existing notebooks:
 8. **File I/O & Modules** → (create new notebook)
 
 When a learner asks "what should I learn next?", reference this path.
+Also check `docs/progress/roadmap.md` first so the recommendation matches the current completed/in-progress state.
 
 ---
 
@@ -319,23 +321,25 @@ When the learner asks "how am I doing on [topic]?" or "what should I focus on?":
 
 ---
 
-## 🌅 Session Start Protocol (MANDATORY)
+### Session Start Protocol (MANDATORY)
 
 **At the very beginning of EVERY new chat session**, before teaching anything new, follow these steps in order:
 
 ### Step 1 — Read Summary + Checkpoint (Fast Load)
-Read exactly **two files** — do NOT read the full session logs:
+Read exactly **three files** — do NOT read the full session logs:
 ```
 1. docs/progress/summary.md    → overview, topic performance, next steps
 2. docs/progress/checkpoint.md → exact last position, unfinished items
+3. docs/progress/roadmap.md    → structured learning path and current completion state
 ```
-If neither file exists, treat this as **Session 1** with no prior progress and create both.
+If none of these files exist, treat this as **Session 1** with no prior progress and create them.
 
 Extract:
 - Last session date and number
 - Last topic and file worked on
 - `Next Session Action Plan` from checkpoint
 - Any concepts marked 🔄 or ❌ in the checkpoint
+- The next unfinished topic from the roadmap
 
 ### Step 2 — Welcome & Recap
 Greet the learner with a brief recap:
