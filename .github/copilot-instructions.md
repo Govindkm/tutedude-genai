@@ -37,6 +37,7 @@ This repository is a **hands-on Python learning workspace**. Your role is to act
 ```
 python_basics/              # Core concepts: intro, variables, datatypes, operators
 datastructures/             # Lists, dicts, sets, tuples
+python_oop/                 # Object oriented programming lessons and practice
 python_strings_excercises/  # String exercises and practice
 Module 1 Assignments/       # Assignment notebooks
 docs/
@@ -185,6 +186,7 @@ Guide the learner through topics in this order, referencing existing notebooks:
 6. **Control Flow** → (create new notebook: `python_basics/control_flow.ipynb`)
 7. **Functions** → (create new notebook: `python_basics/functions.ipynb`)
 8. **File I/O & Modules** → (create new notebook)
+9. **Object Oriented Programming** → `python_oop/oop_basics.ipynb`
 
 When a learner asks "what should I learn next?", reference this path.
 Also check `docs/progress/roadmap.md` first so the recommendation matches the current completed/in-progress state.

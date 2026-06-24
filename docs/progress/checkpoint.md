@@ -5,31 +5,33 @@
 
 ---
 
-**Last Session Date:** 2026-06-08
-**Session Number:** 5
-**Last Topic:** File I/O and Modules (module exercise ladder + level-up)
-**Last File Worked On:** `python_basics/file_io_modules.ipynb`
-**Last Exercise:** Level-Up module exercise (`study_blocks`, `pick_focus_topic`, `session_stamp`)
+**Last Session Date:** 2026-06-24
+**Session Number:** 7
+**Last Topic:** Object Oriented Programming Basics (classes, objects, `__init__`, instance methods)
+**Last File Worked On:** `python_oop/oop_basics.ipynb`
+**Last Exercise:** Completed Student class result checker and validated OOP basics notebook
 
 ## ✅ Completed in Last Session
 
-- Completed module imports mini drill (`math`, `random`, `datetime`)
-- Completed Module Exercise Ladder (`circle_stats`, `practice_plan`, `days_left_in_year`)
-- Completed Module Exercise Level-Up (`study_blocks`, `pick_focus_topic`, `session_stamp`)
-- Refined and cleaned module exercise code for readability and pure return behavior
-- Re-ran self-check successfully for module continuation
+- Completed `Car` class exercise with constructor and `details()` method
+- Completed `Student` class exercise with `result()` logic
+- Practiced creating objects and calling instance methods
+- Completed OOP basics check in `python_oop/oop_basics.ipynb`
 
 ## 🔄 In Progress / Needs Practice
 
 - Solving join-style comprehensions quickly without loops (Section 3 still pending)
 - Improving speed on multi-table join aggregation patterns under time pressure
+- Completing the `**kwargs` practice in Functions when revisiting that topic
+- OOP advanced topics: class methods, static methods, and inheritance
 
 ## ⏸️ Mid-Session Unfinished
 
 - `datastructures/comprehensions_joins_30_problems.ipynb` Section 3 (Problems 21-30)
+- None
 
 ## 📌 Next Session Action Plan
 
-1. Complete comprehension joins Section 3 (Problems 21-30)
-2. Do one timed recap drill on multi-table join + aggregation logic
-3. Build a mini File I/O logger that timestamps entries using `datetime`
+1. Continue OOP with class attributes, `@classmethod`, and `@staticmethod`
+2. Start inheritance practice in a new OOP extension notebook or new section
+3. Complete comprehension joins Section 3 (Problems 21-30)

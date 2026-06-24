@@ -7,18 +7,18 @@
 
 ---
 
-**Last Updated:** 2026-06-08
-**Total Sessions:** 5
-**Topics Covered So Far:** Python Lists ✅, Dictionaries ✅, Comprehensions (Mixed + Joins) 🚀, Control Flow ✅, Loops ✅, Functions 🚀, File I/O and Modules 🚀
+**Last Updated:** 2026-06-24
+**Total Sessions:** 7
+**Topics Covered So Far:** Python Lists ✅, Dictionaries ✅, Comprehensions (Mixed + Joins) 🚀, Control Flow ✅, Loops ✅, Functions 🚀, File I/O and Modules 🚀, Object Oriented Programming 🟡
 
 ## 📍 Last Session Snapshot
 
 | Field | Value |
 |-------|-------|
-| Session | Session 5 — 2026-06-08 |
-| Last Topic | File I/O and Modules (module exercise continuation) |
-| Last File Worked On | `python_basics/file_io_modules.ipynb` |
-| Session Log | `docs/progress/sessions/2026-06-08.md` |
+| Session | Session 7 — 2026-06-24 |
+| Last Topic | Object Oriented Programming Basics (classes, `__init__`, instance methods) |
+| Last File Worked On | `python_oop/oop_basics.ipynb` |
+| Session Log | `docs/progress/sessions/2026-06-24.md` |
 
 ## 📊 Topic Performance Overview
 
@@ -31,9 +31,10 @@
 | Loops | 1 | 3 | 0 | 0 | ✅ Strong |
 | Functions | 1 | 2 | 1 | 0 | 🟡 In Progress |
 | File I/O and Modules | 2 | 8 | 0 | 0 | ✅ Strong |
+| Object Oriented Programming | 2 | 2 | 0 | 0 | 🟡 In Progress |
 
 ## 🗓️ Next Session Should Cover
 
-1. Complete Section 3 (Problems 21-30) in `datastructures/comprehensions_joins_30_problems.ipynb`
-2. Do one timed recap drill for multi-table join + aggregation comprehensions
-3. Build a mini File I/O logger with `datetime` timestamps
+1. Continue OOP with class attributes, `@classmethod`, and `@staticmethod`
+2. Complete Section 3 (Problems 21-30) in `datastructures/comprehensions_joins_30_problems.ipynb`
+3. Do one timed recap drill for multi-table join + aggregation comprehensions
