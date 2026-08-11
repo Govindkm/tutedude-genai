@@ -21,8 +21,8 @@
 ### 2. Core Data Structures
 - ✅ Lists
 - ✅ Dictionaries
-- 🟡 Tuples
-- ⏳ Sets
+- ✅ Tuples
+  - ✅ Sets
 - 🟡 Comprehensions
 - ⏳ Nested data and mixed transforms
 
