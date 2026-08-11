@@ -3,7 +3,7 @@
 > **Copilot: Read this file at session start after `summary.md` and `checkpoint.md`.**
 > Use it to decide the next topic, keep sequencing clean, and avoid jumping ahead.
 
-**Last Updated:** 2026-06-24
+**Last Updated:** 2026-08-11
 
 ## Legend
 - ✅ Completed
@@ -21,7 +21,7 @@
 ### 2. Core Data Structures
 - ✅ Lists
 - ✅ Dictionaries
-- ⏳ Tuples
+- 🟡 Tuples
 - ⏳ Sets
 - 🟡 Comprehensions
 - ⏳ Nested data and mixed transforms
@@ -75,6 +75,7 @@
 - Operators
 - Lists
 - Dictionaries
+- Tuples (basics started: creation, unpacking, immutability)
 - Control Flow
 - Loops
 - Functions: basics, defaults, returns, and multi-return patterns
@@ -82,8 +83,8 @@
 - Object Oriented Programming: basics completed (classes, `__init__`, instance methods)
 
 ## Next Recommended Topics
-1. Continue OOP with class attributes and utility methods (`@classmethod`, `@staticmethod`)
-2. Start inheritance and polymorphism examples
+1. Finish tuple slicing/membership/nested mini challenge
+2. Continue OOP with class attributes and utility methods (`@classmethod`, `@staticmethod`)
 3. Finish comprehension joins Section 3 (Problems 21-30)
 4. Complete the pending `**kwargs` practice in Functions
 

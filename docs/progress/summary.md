@@ -7,18 +7,18 @@
 
 ---
 
-**Last Updated:** 2026-06-24
-**Total Sessions:** 7
-**Topics Covered So Far:** Python Lists ✅, Dictionaries ✅, Comprehensions (Mixed + Joins) 🚀, Control Flow ✅, Loops ✅, Functions 🚀, File I/O and Modules 🚀, Object Oriented Programming 🟡
+**Last Updated:** 2026-08-11
+**Total Sessions:** 8
+**Topics Covered So Far:** Python Lists ✅, Dictionaries ✅, Tuples 🟡, Comprehensions (Mixed + Joins) 🚀, Control Flow ✅, Loops ✅, Functions 🚀, File I/O and Modules 🚀, Object Oriented Programming 🟡
 
 ## 📍 Last Session Snapshot
 
 | Field | Value |
 |-------|-------|
-| Session | Session 7 — 2026-06-24 |
-| Last Topic | Object Oriented Programming Basics (classes, `__init__`, instance methods) |
-| Last File Worked On | `python_oop/oop_basics.ipynb` |
-| Session Log | `docs/progress/sessions/2026-06-24.md` |
+| Session | Session 8 — 2026-08-11 |
+| Last Topic | Tuples (creation, unpacking, immutability, slicing, membership, nested tuples) |
+| Last File Worked On | `datastructures/tuples.ipynb` |
+| Session Log | `docs/progress/sessions/2026-08-11.md` |
 
 ## 📊 Topic Performance Overview
 
@@ -32,9 +32,10 @@
 | Functions | 1 | 2 | 1 | 0 | 🟡 In Progress |
 | File I/O and Modules | 2 | 8 | 0 | 0 | ✅ Strong |
 | Object Oriented Programming | 2 | 2 | 0 | 0 | 🟡 In Progress |
+| Tuples | 1 | 1 | 1 | 0 | 🟡 In Progress |
 
 ## 🗓️ Next Session Should Cover
 
-1. Continue OOP with class attributes, `@classmethod`, and `@staticmethod`
-2. Complete Section 3 (Problems 21-30) in `datastructures/comprehensions_joins_30_problems.ipynb`
-3. Do one timed recap drill for multi-table join + aggregation comprehensions
+1. Complete the tuple mini challenge in `datastructures/tuples.ipynb` (slicing/membership/nested)
+2. Continue OOP with class attributes, `@classmethod`, and `@staticmethod`
+3. Complete Section 3 (Problems 21-30) in `datastructures/comprehensions_joins_30_problems.ipynb`
