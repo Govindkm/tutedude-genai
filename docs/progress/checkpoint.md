@@ -32,8 +32,9 @@ Tuple nested access fluency and mini challenge completion
 - None — ready to start Sets!
 ## 📌 Next Session Action Plan
 
-1. Finish tuple mini challenge in `datastructures/tuples.ipynb`
-2. Learn Sets: creation, unique values, membership checks
-2. Set operations: union (|), intersection (&), difference (-), symmetric_difference (^)
-3. Beginner → Intermediate → Challenge problems on sets
-4. Then: OOP class methods or Comprehension Joins Section 3
+1. **Before doing anything else, learn lambda, `map()`, and `filter()` functions.**
+2. Finish tuple mini challenge in `datastructures/tuples.ipynb`
+3. Learn Sets: creation, unique values, membership checks
+4. Set operations: union (|), intersection (&), difference (-), symmetric_difference (^)
+5. Beginner → Intermediate → Challenge problems on sets
+6. Then: OOP class methods or Comprehension Joins Section 3

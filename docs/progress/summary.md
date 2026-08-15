@@ -37,5 +37,6 @@
 
 ## 🗓️ Next Session Should Cover
 
-1. Continue OOP with class attributes, `@classmethod`, and `@staticmethod`
-2. Complete Section 3 (Problems 21-30) in `datastructures/comprehensions_joins_30_problems.ipynb`
+1. **First, learn lambda, `map()`, and `filter()` before doing anything else.**
+2. Continue OOP with class attributes, `@classmethod`, and `@staticmethod`
+3. Complete Section 3 (Problems 21-30) in `datastructures/comprehensions_joins_30_problems.ipynb`

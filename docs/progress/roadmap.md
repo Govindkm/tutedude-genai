@@ -83,10 +83,11 @@
 - Object Oriented Programming: basics completed (classes, `__init__`, instance methods)
 
 ## Next Recommended Topics
-1. Finish tuple slicing/membership/nested mini challenge
-2. Continue OOP with class attributes and utility methods (`@classmethod`, `@staticmethod`)
-3. Finish comprehension joins Section 3 (Problems 21-30)
-4. Complete the pending `**kwargs` practice in Functions
+1. **Learn lambda, `map()`, and `filter()` functions before starting any other topic.**
+2. Finish tuple slicing/membership/nested mini challenge
+3. Continue OOP with class attributes and utility methods (`@classmethod`, `@staticmethod`)
+4. Finish comprehension joins Section 3 (Problems 21-30)
+5. Complete the pending `**kwargs` practice in Functions
 
 ## Topic Ordering Rule
 When starting a new topic, follow this order unless the checkpoint says otherwise:
