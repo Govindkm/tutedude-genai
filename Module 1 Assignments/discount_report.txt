@@ -1,0 +1,5 @@
+Mouse, 500, 450.0
+Keyboard, 1500, 1350.0
+Monitor, 7000, 6300.0
+Pendrive, 400, 360.0
+Camera, 5000, 4500.0

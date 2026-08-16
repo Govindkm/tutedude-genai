@@ -1,0 +1,3 @@
+Aloo: 5
+Gajar: 15
+Pyaz: 10
