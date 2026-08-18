@@ -1,0 +1,3 @@
+Aataa | 120
+Chawal | 150
+Sabzi | 200
