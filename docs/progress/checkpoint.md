@@ -5,36 +5,32 @@
 
 ---
 
-**Last Session Date:** 2026-08-11
-**Session Number:** 8
-**Last Topic:** Sets (completed and mastered ✅)
-**Last File Worked On:** `datastructures/sets.ipynb`
-**Last Exercise:** Set operations challenge — union, intersection, difference (including direction fix)
+**Last Session Date:** 2026-08-19
+**Session Number:** 9
+**Last Topic:** Object Oriented Programming
+**Last File Worked On:** `python_oop/inheritance.ipynb`
+**Last Exercise:** Inheritance mini-project with employee roles and assertion checks
 
 ## ✅ Completed in Last Session
 
-- Completed tuple creation, indexing, unpacking, slicing, membership, nested tuples ✅
-- Completed Sets: creation, deduplication, membership checks
-- Completed set operations: union `|`, intersection `&`, difference `-`, symmetric difference `^`
-- Completed add/remove/discard/clear methods
-- Fixed and understood set difference direction (A - B vs B - A)
+- Reviewed class attributes and shared class state
+- Practiced `@classmethod` with `cls` and alternative constructors
+- Practiced `@staticmethod` validation helpers
+- Built a separate inheritance notebook covering child classes, overriding, `super()`, polymorphism, multiple inheritance, MRO, and assertions
 
 ## 🔄 In Progress / Needs Practice
-Tuple nested access fluency and mini challenge completion
+- Inheritance practice: employee challenge and more overriding drills
 - Solving join-style comprehensions quickly without loops (Section 3 still pending)
 - Improving speed on multi-table join aggregation patterns under time pressure
 - Completing the `**kwargs` practice in Functions when revisiting that topic
-- OOP advanced topics: class methods, static methods, and inheritance
+- OOP advanced topics: encapsulation and composition
 
 ## ⏸️ Mid-Session Unfinished
 
-- `datastructures/tuples.ipynb`: mini challenge in slicing/membership/nested tuple practice cell
-- None — ready to start Sets!
+- None
 ## 📌 Next Session Action Plan
 
-1. **Before doing anything else, learn lambda, `map()`, and `filter()` functions.**
-2. Finish tuple mini challenge in `datastructures/tuples.ipynb`
-3. Learn Sets: creation, unique values, membership checks
-4. Set operations: union (|), intersection (&), difference (-), symmetric_difference (^)
-5. Beginner → Intermediate → Challenge problems on sets
-6. Then: OOP class methods or Comprehension Joins Section 3
+1. Complete the `Employee` inheritance challenge in `python_oop/inheritance.ipynb`.
+2. Practice method overriding and polymorphism with one additional example.
+3. Continue OOP with encapsulation and composition.
+4. Learn lambda, `map()`, and `filter()` before returning to comprehension joins Section 3.

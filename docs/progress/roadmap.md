@@ -3,7 +3,7 @@
 > **Copilot: Read this file at session start after `summary.md` and `checkpoint.md`.**
 > Use it to decide the next topic, keep sequencing clean, and avoid jumping ahead.
 
-**Last Updated:** 2026-08-11
+**Last Updated:** 2026-08-19
 
 ## Legend
 - ✅ Completed
@@ -56,10 +56,10 @@
 - ✅ Classes and objects
 - ✅ `__init__` and instance attributes
 - ✅ Instance methods
-- ⏳ Class attributes and `@classmethod`
-- ⏳ `@staticmethod`
-- ⏳ Inheritance
-- ⏳ Polymorphism
+- ✅ Class attributes and `@classmethod`
+- ✅ `@staticmethod`
+- 🟡 Inheritance
+- 🟡 Polymorphism
 - ⏳ Encapsulation
 - ⏳ Composition
 
@@ -80,14 +80,13 @@
 - Loops
 - Functions: basics, defaults, returns, and multi-return patterns
 - File I/O and Modules: file handling, built-in modules, custom modules, package-style imports
-- Object Oriented Programming: basics completed (classes, `__init__`, instance methods)
+- Object Oriented Programming: classes, `__init__`, instance methods, class attributes, `@classmethod`, `@staticmethod`, and inheritance basics
 
 ## Next Recommended Topics
-1. **Learn lambda, `map()`, and `filter()` functions before starting any other topic.**
-2. Finish tuple slicing/membership/nested mini challenge
-3. Continue OOP with class attributes and utility methods (`@classmethod`, `@staticmethod`)
-4. Finish comprehension joins Section 3 (Problems 21-30)
-5. Complete the pending `**kwargs` practice in Functions
+1. Practice inheritance, overriding, and polymorphism in `python_oop/inheritance.ipynb`.
+2. Continue OOP with encapsulation and composition.
+3. Learn lambda, `map()`, and `filter()` before returning to comprehension joins Section 3.
+4. Complete the pending `**kwargs` practice in Functions.
 
 ## Topic Ordering Rule
 When starting a new topic, follow this order unless the checkpoint says otherwise:
